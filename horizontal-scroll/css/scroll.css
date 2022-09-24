@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-y: hidden;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  display: flex;
+  width: 3000vw;
+  height: 100vh;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.scene {
+  width: 1000vw;
+}
+.scene p {
+  scroll-margin-left: 0em;
+  scroll-snap-align: start;
+}
+
+.backsky {
+  position: absolute;
+  inset: 0;
+  background-attachment: fixed;
+  background-color: red;
+  background: linear-gradient(to right, aqua, darkblue);
+  background-image: url(../back.jpg);
+  background-size: auto 100vh;
+}
+
+.sub {
+  z-index: 3000;
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  width: 200px;
+  animation: updown 2000ms alternate infinite;
+}
+
+.sub img {
+  width: 100%;
+}
+
+.sub::after,
+.sub::before {
+  content: "";
+  background: radial-gradient(ellipse at left, #d0c74096 80%, transparent);
+  width: 150px;
+  height: 80px;
+  position: absolute;
+  right: 160px;
+  top: 36%;
+  clip-path: polygon(0 45%, 100% 22%, 100% 78%, 0 55%);
+  z-index: -1;
+  transform: scaleX(-1);
+}
+.sub::after {
+  height: 70px;
+  width: 200px;
+  top: 40%;
+}
+
+.backmountain {
+  width: 3000vw;
+  height: 100vh;
+
+  position: absolute;
+  inset: 0;
+}
+.backmountain svg {
+  width: 100%;
+  height: 100%;
+}
+@keyframes updown {
+  from {
+    top: calc(30% + var(--offset, 0px));
+    transform: scaleX(-1) rotate(-20deg);
+  }
+
+  to {
+    top: calc(60% + var(--offset, 0px));
+    transform: scaleX(-1) rotate(20deg);
+  }
+}

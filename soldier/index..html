@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="css/main.css">
+<script src="js/three.r119.min.js"></script>
+<script src="js/fog.js"></script>
+</head>
+<body>
+<div class="back"><p>invisible</p></div>
+<main class="wrapper">
+
+  <section class="frame" id="id-1">
+  <aside>
+   
+  
+  
+   
+   <a href="#id-1">first</a>
+  
+  
+
+    <a href="#id-2">next</a>
+
+
+  
+
+  </aside>
+
+  <p class="id">1</p>
+  
+    <img style="--x: 10px; --y:57vh;" src="images/01.png" id="1-a"> 
+  
+    <img style="--x: 0px; --y:0;" src="images/sol.png" id="1-b"> 
+  
+  </section>
+
+  <section class="frame" id="id-2">
+  <aside>
+   
+  
+  
+   
+  
+    <a href="#id-1">previous</a>
+
+  
+  
+
+    <a href="#id-3">next</a>
+
+
+  
+
+  </aside>
+
+  <p class="id">2</p>
+  
+    <img style="--x: 10px; --y:57vh;" src="images/02.png" id="2-a"> 
+  
+    <img style="--x: 0px; --y:0;" src="images/sol.png" id="2-b"> 
+  
+  </section>
+
+  <section class="frame" id="id-3">
+  <aside>
+   
+  
+  
+   
+  
+    <a href="#id-2">previous</a>
+
+  
+  
+
+    <a href="#id-4">next</a>
+
+
+  
+
+  </aside>
+
+  <p class="id">3</p>
+  
+    <img style="--x: 10px; --y:57vh;" src="images/03.png" id="3-a"> 
+  
+    <img style="--x: 0px; --y:0;" src="images/sol.png" id="3-b"> 
+  
+  </section>
+
+  <section class="frame" id="id-4">
+  <aside>
+   
+  
+  
+   
+  
+    <a href="#id-3">previous</a>
+
+  
+  
+
+    <a href="#id-5">next</a>
+
+
+  
+
+  </aside>
+
+  <p class="id">4</p>
+  
+    <img style="--x: 10px; --y:57vh;" src="images/04.png" id="4-a"> 
+  
+    <img style="--x: 0px; --y:0;" src="images/sol.png" id="4-b"> 
+  
+  </section>
+
+  <section class="frame" id="id-5">
+  <aside>
+   
+  
+  
+   
+  
+    <a href="#id-4">previous</a>
+
+  
+  
+
+    <a href="#id-6">next</a>
+
+
+  
+
+  </aside>
+
+  <p class="id">5</p>
+  
+    <img style="--x: 10px; --y:57vh;" src="images/05.png" id="5-a"> 
+  
+    <img style="--x: 0px; --y:0;" src="images/sol.png" id="5-b"> 
+  
+  </section>
+
+  <section class="frame" id="id-6">
+  <aside>
+   
+  
+  
+   
+  
+    <a href="#id-5">previous</a>
+
+  
+  
+
+    <a href="#id-7">next</a>
+
+
+  
+
+  </aside>
+
+  <p class="id">6</p>
+  
+    <img style="--x: 10px; --y:57vh;" src="images/06.png" id="6-a"> 
+  
+    <img style="--x: 0px; --y:0;" src="images/sol.png" id="6-b"> 
+  
+  </section>
+
+  <section class="frame" id="id-7">
+  <aside>
+   
+  
+  
+   
+  
+    <a href="#id-6">previous</a>
+
+  
+   <a href="#id-7">last</a>
+  
+
+  </aside>
+
+  <p class="id">7</p>
+  
+    <img style="--x: 10px; --y:57vh;" src="images/07.png" id="7-a"> 
+  
+    <img style="--x: 0px; --y:0;" src="images/sol.png" id="7-b"> 
+  
+  </section>
+
+  <section class="frame" id="id-8">
+  <aside>
+   
+  
+  
+   
+  
+    <a href="#id-7">previous</a>
+
+  
+  
+
+    <a href="#id-9">next</a>
+
+
+  
+
+  </aside>
+
+  <p class="id">8</p>
+  
+    <img style="--x: 10px; --y:57vh;" src="images/08.png" id="8-a"> 
+  
+    <img style="--x: 10px; --y:57vh;" src="images/08b.png" id="8-b"> 
+  
+    <img style="--x: 200px; --y:200px;" src="images/sol.png" id="8-c"> 
+  
+  </section>
+
+</main>
+<script src="/js/main.js"></script>
+<script>
+VANTA.FOG({
+el: ".back",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  highlightColor: 0x9b8f6f,
+  midtoneColor: 0xaf8c88,
+  lowlightColor: 0x6a6193,
+  blurFactor: 0.56,
+  speed: 1.60,
+  zoom: 2.40
+})
+</script>
+</body>
+</html>
